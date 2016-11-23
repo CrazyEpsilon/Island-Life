@@ -1,0 +1,5 @@
+/*/this MISSIONNAME is by NAME/*/
+_SCRIPT1 = execVM "Variables.sqf";
+waitUntil{ScriptDone _SCRIPT1};
+execVM "MOTD.sqf";
+systemChat format["Welcome %1 enjoy playing!", name player];
