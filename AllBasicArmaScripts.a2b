@@ -1,0 +1,7 @@
+/*/Variables/*/VariableName=Value;
+/*/GlobalChat/*/player globalChat "Message"; /*/globalChat can be: globalChat, groupChat, sideChat, vehicleChat and systemChat/*/
+/*/FormatChat/*/player globalChat format["Variable's: %1",VariableName];
+/*/Change Variable/*/VarName=VarName+Value; /*/or/*/ VarName=Value;
+/*/exec a script/*/ExecVM "SCRIPTNAME.sqf"; /*/or if its need to load before anything after it:/*/ _NAME = ExecVM "SCRIPTNAME.sqf"; /*/And Then/*/ waitUntil{ScriptDone _NAME};
+/*/Vars One Script Only/*/ _VarName = Value;
+/*/Wait Times/*/ sleep TIME IN SECONDS;
